@@ -1,10 +1,10 @@
 from flask import Flask, jsonify
 
-app = Flask(_name_)
+app = Flask(__name__)
 
 @app.route('/health', methods=['GET'])
 def health_check():
-    return jsonify(status="UP", message="Application is running successfully!"), 200
+    return jsonify(status="UP", message="Application is running successfully2!"), 200
 
-if _name_ == '_main_':
-    app.run(host='0.0.0.0', port=5000)
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=5000)

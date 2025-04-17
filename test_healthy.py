@@ -11,4 +11,4 @@ def test_health_endpoint(client):
     response = client.get('/health')
     assert response.status_code == 200
     assert response.json['status'] == "UP"
-    assert "Application is running successfully!" in response.json['message']
+    assert "Application is running successfully2!" in response.json['message']
