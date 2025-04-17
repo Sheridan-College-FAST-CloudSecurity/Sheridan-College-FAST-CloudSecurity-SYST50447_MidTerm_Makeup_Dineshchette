@@ -20,7 +20,7 @@ jobs:
         python-version: '3.12'
 
     - name: Print Hello Message
-      run: echo "Hello from Sameer Shaik"
+      run: echo "Hello from Dinesh CHette"
 
     - name: Install dependencies
       run: |
@@ -29,4 +29,4 @@ jobs:
 
     - name: Run API test
       run: |
-        pytest test_app.py 
+        pytest test_healthy.py 
